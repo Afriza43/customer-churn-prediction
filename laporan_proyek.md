@@ -7,9 +7,10 @@ Kehilangan pelanggan merupakan masalah besar bagi industri perbankan. Inovasi te
 Customer churn merupakan salah satu masalah besar yang dihadapi oleh industri perbankan. Menurut riset oleh Harvard Business Review, menarik pelanggan baru memerlukan biaya yang jauh lebih tinggi dibandingkan mempertahankan pelanggan yang sudah ada. Oleh karena itu, bank sangat tertarik untuk mengetahui faktor-faktor apa yang menyebabkan pelanggan memutuskan untuk meninggalkan layanan mereka. Dengan memahami alasan di balik churn, bank dapat mengembangkan program loyalitas dan kampanye retensi untuk mempertahankan pelanggan mereka. Dengan demikian, prediksi churn dengan akurasi tinggi bisa sangat membantu dalam menyusun strategi retensi yang efektif agar perusahaan dapat menjaga retensi pelanggan. Untuk memprediksi churn perlu implementasi ilmu machine learning agar mencapai hasil prediksi yang akurat.
 
 Referensi:
-[Klasifikasi customer churn pada telekomunikasi industri untuk retensi pelanggan menggunakan algoritma C4.5](http://www.djournals.com/klik/article/view/829)
-[Pendekatan data science untuk menemukan churn pelanggan pada sektor perbankan dengan machine learning](https://jurnal.itscience.org/index.php/dsi/article/view/1169)
-[The value of keeping the right customers. Harvard Business Review](https://hbr.org/2014/10/the-value-of-keeping-the-right-customers)
+
+- [Klasifikasi customer churn pada telekomunikasi industri untuk retensi pelanggan menggunakan algoritma C4.5](http://www.djournals.com/klik/article/view/829)
+- [Pendekatan data science untuk menemukan churn pelanggan pada sektor perbankan dengan machine learning](https://jurnal.itscience.org/index.php/dsi/article/view/1169)
+- [The value of keeping the right customers. Harvard Business Review](https://hbr.org/2014/10/the-value-of-keeping-the-right-customers)
 
 ## Business Understanding
 
