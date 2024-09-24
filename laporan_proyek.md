@@ -83,13 +83,11 @@ Terdapat beberapa outlier pada fitur 'Age' dan 'CreditScore'. Akan tetapi, kali 
 1. Gender
 
    ![barchart-uni-gender](https://github.com/user-attachments/assets/9ea25ef4-617c-491c-94df-10850f04fdb8)
-   ![barchart-uni-gender](https://github.com/user-attachments/assets/9ea25ef4-617c-491c-94df-10850f04fdb8)
 
 Berdasarkan grafik di atas, customer laki - laki lebih banyak, sekitar 54,6% dari seluruh data, daripada perempuan sebesar 45,4%.
 
 2. Card Type
 
-   ![barchart-uni-cardtype](https://github.com/user-attachments/assets/d8994aad-2755-484a-8e8d-0c06df0f8b79)
    ![barchart-uni-cardtype](https://github.com/user-attachments/assets/d8994aad-2755-484a-8e8d-0c06df0f8b79)
 
 Terdapat 4 kategori tipe kartu yang dimiliki oleh customer, yaitu Diamond, Gold, Silver, Platinum. Masing - masing kategori tersebut memiliki jumlah yang sama yaitu 25% dari jumlah dataset, sekitar 2500 customer untuk masing - masing kategori
@@ -97,16 +95,13 @@ Terdapat 4 kategori tipe kartu yang dimiliki oleh customer, yaitu Diamond, Gold,
 3. Geography
 
    ![barchart-uni-geo](https://github.com/user-attachments/assets/d90bfab0-3327-4d4e-9dda-473564d0aea6)
-   ![barchart-uni-geo](https://github.com/user-attachments/assets/d90bfab0-3327-4d4e-9dda-473564d0aea6)
 
 Pada dataset, customer hanya berasal dari 3 negara, diantaranya France, Spain, dan German. Dari grafik di atas, dapat dilihat bahwa Bank tersebut banyak yang berasal dari negara France, sekitar 50% dari sampel. Sedangkan sisanya, yaitu berasal dari Germany dan Spain sebanyak 25% dari data untuk masing - masing negara
 
 **Fitur Numerik**
 
 4. Hubungan Antar Fitur Numerik
-5. Hubungan Antar Fitur Numerik
 
-![histogram_fitur_numerik](https://github.com/user-attachments/assets/c5613cfd-4304-4de8-ae4f-6d1e90ef95ea)
 ![histogram_fitur_numerik](https://github.com/user-attachments/assets/c5613cfd-4304-4de8-ae4f-6d1e90ef95ea)
 
 Dari grafik di atas, maka dapat disimpulkan sebagai berikut :
