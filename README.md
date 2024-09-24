@@ -1,4 +1,4 @@
-# Laporan Proyek Machine Learning - Afriza Meidio Andhana
+# Prediksi Bank Customer Churn
 
 ## Domain Proyek
 
