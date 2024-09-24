@@ -82,27 +82,27 @@ Terdapat beberapa outlier pada fitur 'Age' dan 'CreditScore'. Akan tetapi, kali 
 
 1. Gender
 
-   ![Bar Chart Gender](https://github.com/Afriza43/customer-churn-prediction/blob/main/images/barchart-uni-gender.png)
+   ![barchart-uni-gender](https://github.com/user-attachments/assets/9ea25ef4-617c-491c-94df-10850f04fdb8)
 
 Berdasarkan grafik di atas, customer laki - laki lebih banyak, sekitar 54,6% dari seluruh data, daripada perempuan sebesar 45,4%.
 
 2. Card Type
 
-   ![Bar Chart Card Type](https://github.com/Afriza43/customer-churn-prediction/blob/main/images/barchart-uni-cardtype.png)
+   ![barchart-uni-cardtype](https://github.com/user-attachments/assets/d8994aad-2755-484a-8e8d-0c06df0f8b79)
 
 Terdapat 4 kategori tipe kartu yang dimiliki oleh customer, yaitu Diamond, Gold, Silver, Platinum. Masing - masing kategori tersebut memiliki jumlah yang sama yaitu 25% dari jumlah dataset, sekitar 2500 customer untuk masing - masing kategori
 
 3. Geography
 
-   ![Bar Chart Geography](https://github.com/Afriza43/customer-churn-prediction/blob/main/images/barchart-uni-geo.png)
+   ![barchart-uni-geo](https://github.com/user-attachments/assets/d90bfab0-3327-4d4e-9dda-473564d0aea6)
 
 Pada dataset, customer hanya berasal dari 3 negara, diantaranya France, Spain, dan German. Dari grafik di atas, dapat dilihat bahwa Bank tersebut banyak yang berasal dari negara France, sekitar 50% dari sampel. Sedangkan sisanya, yaitu berasal dari Germany dan Spain sebanyak 25% dari data untuk masing - masing negara
 
 **Fitur Numerik**
 
-Hubungan Antar Fitur Numerik
+4. Hubungan Antar Fitur Numerik
 
-![Histogram](https://github.com/Afriza43/customer-churn-prediction/blob/main/images/histogram_fitur_numerik.png)
+![histogram_fitur_numerik](https://github.com/user-attachments/assets/c5613cfd-4304-4de8-ae4f-6d1e90ef95ea)
 
 Dari grafik di atas, maka dapat disimpulkan sebagai berikut :
 
@@ -113,32 +113,40 @@ Dari grafik di atas, maka dapat disimpulkan sebagai berikut :
 - Gaji pelanggan pada bank tersebut cukup variatif dari 0 - 200.000
 - 20% pelanggan dari sampel mengeluh dengan bank tersebut.
 
+5. Analisis Target ['Exited']
+
+   ![churn-rate](https://github.com/user-attachments/assets/85b7a275-4d02-43c1-a9af-9b82ff7009ee)
+
+   20% pelanggan dari sampel meninggalkan bank tersebut. Hal ini terhitung cukup besar dan merugikan
+
+
 #### Multivariate Analysis
 
 **Fitur Kategorikal**
 
 1. Hubungan Fitur Gender dengan Target (Exited)
 
-   ![Bar Chart Gender dengan Target](https://github.com/Afriza43/customer-churn-prediction/blob/main/images/barchart-multi-gender.png)
+   ![barchart-multi-gender](https://github.com/user-attachments/assets/79a83b66-8f9b-40ca-9e9c-f03185e06510)
 
 Dari grafik, dapat dilihat bahwa banyak pelanggan yang keluar berasal dari negara German dan France
 
 2. Hubungan Fitur Geography dengan Target (Exited)
 
-   ![Bar Chart Geography dengan Target](https://github.com/Afriza43/customer-churn-prediction/blob/main/images/barchart-multi-geo.png)
+   ![barchart-multi-geo](https://github.com/user-attachments/assets/f7c00256-e524-48f8-8c98-457f4432c450)
 
 Dari semua pelanggan perempuan, 25% perempuan memutuskan untuk meninggalkan bank.Dari semua pelanggan laki - laki, 16% meninggalkan bank
 
 3. Hubungan Fitur Card Type dengan Target (Exited)
 
-   ![Bar Chart Card Type dengan Target](https://github.com/Afriza43/customer-churn-prediction/blob/main/images/barchart-multi-cardtype.png)
+   ![barchart-multi-cardtype](https://github.com/user-attachments/assets/1707fe28-aa9e-4937-96ba-eda897f256c7)
 
 Sekitar 20% pelanggan dari tiap kategori kartu memutuskan untuk pergi meninggalkan bank
 
 **Fitur Numerik**
 
 1. Matrik Heatmap
-   ![Heatmap Fitur Numerik](https://github.com/Afriza43/customer-churn-prediction/blob/main/images/corr_matrix.png)
+   
+![corr_matrix](https://github.com/user-attachments/assets/96a70660-cf02-4448-81db-f36fe385e3cd)
 
 Jika diperhatikan dengan baik, fitur 'Complain' memiliki skor korelasi dengan target 'Exited' sebesar 1. Artinya, hampir setiap pelanggan yang meninggalkan bank tersebut pasti memiliki keluhan dengan bank tersebut.
 
@@ -149,12 +157,14 @@ Tetapi terdapat fitur 'IsActiveMember' yang berkorelasi negatif dengan fitur 'Ex
 Selain fitur tersebut, semua fitur lainnya memiliki korelasi yang kecil. Sehingga tidak diperlukan untuk melakukan prediksi dan dapat dihapus
 
 2. Hubungan Status Aktif Customer dengan Target (Exited)
-   ![Bar Chart IsActiveMember dengan Target](https://github.com/Afriza43/customer-churn-prediction/blob/main/images/barchart-multi-member_status.png)
+   
+![barchart-multi-member_status](https://github.com/user-attachments/assets/0aff5d08-3632-4760-ad47-15f8cb465b94)
 
 Member yang tidak aktif lebih banyak meninggalkan bank daripada yang masih aktif
 
 3. Hubungan Umur dengan Target (Exited)
-   ![Bar Chart Umur dengan Target](https://github.com/Afriza43/customer-churn-prediction/blob/main/images/barchart-multi-age.png)
+   
+![barchart-multi-age](https://github.com/user-attachments/assets/d2c23a57-408a-40ae-af90-3097c97e5809)
 
 Pelanggan dalam kelompok usia 50-60 tahun memiliki tingkat churn tertinggi, yaitu 56.21%. Ini berarti lebih dari separuh pelanggan dalam kelompok usia ini memutuskan untuk meninggalkan bank.
 
