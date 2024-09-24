@@ -311,6 +311,19 @@ df.head()
 
 df.info()
 
+"""### Splitting Data"""
+
+from sklearn.model_selection import train_test_split
+
+x = df.drop(columns='Exited', axis=1)
+y = df['Exited']
+
+x_train, x_test, y_train, y_test = train_test_split(x, y, train_size=0.8, random_state=42)
+
+print(f'Total data of sample in whole dataset: {len(x)}')
+print(f'Total data of sample in train dataset: {len(x_train)}')
+print(f'Total data of sample in test dataset: {len(x_test)}')
+
 """### Handling Imbalance Data
 
 Karena jumlah target ['Exited'] tidak seimbang, maka dilakukan teknik oversampling SMOTE agar target data seimbang
@@ -319,24 +332,11 @@ Karena jumlah target ['Exited'] tidak seimbang, maka dilakukan teknik oversampli
 # Oversampling menggunakan SMOTE
 from imblearn.over_sampling import SMOTE
 
-x = df.drop(columns='Exited', axis=1)
-y = df['Exited']
-
 smote = SMOTE(random_state=42)
 
-x, y = smote.fit_resample(x,y)
+x_train, y_train = smote.fit_resample(x_train,y_train)
 
 y.hist()
-
-"""### Splitting Data"""
-
-from sklearn.model_selection import train_test_split
-
-x_train, x_test, y_train, y_test = train_test_split(x, y, train_size=0.8, random_state=42)
-
-print(f'Total data of sample in whole dataset: {len(x)}')
-print(f'Total data of sample in train dataset: {len(x_train)}')
-print(f'Total data of sample in test dataset: {len(x_test)}')
 
 """### Standarisasi
 
@@ -475,13 +475,13 @@ plt.show()
 ## Prediksi
 """
 
-prediksi = x_test.iloc[45:46].copy()
+prediksi = x_test.iloc[66:67].copy()
 prediksi
 
 """### Hasil Prediksi"""
 
-prediksi = x_test.iloc[45:46].copy()
-pred_dict = {'Label':y_test[45:46]}
+prediksi = x_test.iloc[66:67].copy()
+pred_dict = {'Label':y_test[66:67]}
 pred_dict['Prediksi Model RandomForest'] = model.predict(prediksi)
 
 pd.DataFrame(pred_dict)
