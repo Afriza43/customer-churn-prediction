@@ -96,6 +96,9 @@ Terdapat 4 kategori tipe kartu yang dimiliki oleh customer, yaitu Diamond, Gold,
 Pada dataset, customer hanya berasal dari 3 negara, diantaranya France, Spain, dan German. Dari grafik di atas, dapat dilihat bahwa Bank tersebut banyak yang berasal dari negara France, sekitar 50% dari sampel. Sedangkan sisanya, yaitu berasal dari Germany dan Spain sebanyak 25% dari data untuk masing - masing negara
 
 **Fitur Numerik**
+
+Hubungan Antar Fitur Numerik
+
 ![Histogram](https://github.com/Afriza43/customer-churn-prediction/blob/main/images/histogram_fitur_numerik.png)
 
 Dari grafik di atas, maka dapat disimpulkan sebagai berikut :
@@ -112,16 +115,19 @@ Dari grafik di atas, maka dapat disimpulkan sebagai berikut :
 **Fitur Kategorikal**
 
 1. Hubungan Fitur Gender dengan Target (Exited)
+
    ![Bar Chart Gender dengan Target](https://github.com/Afriza43/customer-churn-prediction/blob/main/images/barchart-multi-gender.png)
 
 Dari grafik, dapat dilihat bahwa banyak pelanggan yang keluar berasal dari negara German dan France
 
 2. Hubungan Fitur Geography dengan Target (Exited)
+
    ![Bar Chart Geography dengan Target](https://github.com/Afriza43/customer-churn-prediction/blob/main/images/barchart-multi-geo.png)
 
 Dari semua pelanggan perempuan, 25% perempuan memutuskan untuk meninggalkan bank.Dari semua pelanggan laki - laki, 16% meninggalkan bank
 
 3. Hubungan Fitur Card Type dengan Target (Exited)
+
    ![Bar Chart Card Type dengan Target](https://github.com/Afriza43/customer-churn-prediction/blob/main/images/barchart-multi-cardtype.png)
 
 Sekitar 20% pelanggan dari tiap kategori kartu memutuskan untuk pergi meninggalkan bank
@@ -156,22 +162,22 @@ Dalam proyek ini, proses data preparation dilakukan dengan beberapa tahapan untu
 1. Encoding Fitur Kategori
    Proses: Pada dataset yang digunakan, beberapa fitur bersifat kategorikal, seperti jenis keanggotaan dan keluhan pelanggan (IsActiveMember, Complain). Fitur-fitur ini perlu diubah menjadi nilai numerik agar dapat diproses oleh model machine learning. Teknik One-Hot Encoding digunakan untuk mengonversi nilai kategorikal menjadi fitur numerik biner.
 
-Alasan: Algoritma machine learning sebagian besar bekerja dengan data numerik, sehingga fitur kategorikal harus diubah agar model dapat memahaminya. One-Hot Encoding digunakan karena teknik ini menciptakan representasi biner yang sesuai untuk variabel kategorikal tanpa menciptakan hubungan ordinal antar nilai.
+   Alasan: Algoritma machine learning sebagian besar bekerja dengan data numerik, sehingga fitur kategorikal harus diubah agar model dapat memahaminya. One-Hot Encoding digunakan karena teknik ini menciptakan representasi biner yang sesuai untuk variabel kategorikal tanpa menciptakan hubungan ordinal antar nilai.
 
 2. Handling Imbalance Data dengan Teknik Oversampling SMOTE
    Proses: Setelah pengkodean, dataset yang digunakan ternyata tidak seimbang. Terdapat lebih banyak data pelanggan yang tidak churn dibandingkan dengan pelanggan yang churn. Untuk mengatasi masalah ini, teknik SMOTE (Synthetic Minority Over-sampling Technique) diterapkan untuk menyeimbangkan data.
 
-Alasan: Ketidakseimbangan kelas pada data dapat menyebabkan model bias terhadap kelas mayoritas, yang mengurangi kemampuan model dalam memprediksi kelas minoritas dengan akurat. SMOTE meningkatkan jumlah sampel pada kelas minoritas dengan mensintesis data baru, yang membantu model untuk belajar secara lebih adil antara kelas mayoritas dan minoritas.
+   Alasan: Ketidakseimbangan kelas pada data dapat menyebabkan model bias terhadap kelas mayoritas, yang mengurangi kemampuan model dalam memprediksi kelas minoritas dengan akurat. SMOTE meningkatkan jumlah sampel pada kelas minoritas dengan mensintesis data baru, yang membantu model untuk belajar secara lebih adil antara kelas mayoritas dan minoritas.
 
 3. Splitting Data (80:20)
    Proses: Setelah data seimbang, langkah selanjutnya adalah membagi dataset menjadi dua bagian: data latih (train) dan data uji (test). Pembagian ini dilakukan dengan rasio 80:20, di mana 80% data digunakan untuk melatih model dan 20% data digunakan untuk menguji kinerja model.
 
-Alasan: Proses pemisahan data ini penting untuk menguji generalisasi model. Dengan melakukan pelatihan pada 80% data dan pengujian pada 20% sisanya, kita dapat mengevaluasi performa model di data yang belum pernah dilihat sebelumnya, memastikan bahwa model tidak overfitting terhadap data latih.
+   Alasan: Proses pemisahan data ini penting untuk menguji generalisasi model. Dengan melakukan pelatihan pada 80% data dan pengujian pada 20% sisanya, kita dapat mengevaluasi performa model di data yang belum pernah dilihat sebelumnya, memastikan bahwa model tidak overfitting terhadap data latih.
 
 4. Standarisasi
    Proses: Standarisasi diterapkan pada fitur numerik seperti Age dan Balance. Teknik ini mengubah nilai setiap fitur sehingga memiliki rata-rata 0 dan varians 1, menggunakan StandardScaler. Fitur biner seperti IsActiveMember dan Complain tidak memerlukan standarisasi karena fitur ini hanya memiliki dua kategori, yaitu 0 dan 1.
 
-Alasan: Standarisasi sangat penting terutama ketika menggunakan algoritma yang sensitif terhadap skala data, seperti regresi logistik atau metode berbasis gradient descent (misalnya, XGBoost). Fitur dengan skala yang berbeda dapat menyebabkan model memberi bobot yang tidak proporsional pada fitur tertentu, sehingga standarisasi memastikan bahwa semua fitur memiliki skala yang sama.
+   Alasan: Standarisasi sangat penting terutama ketika menggunakan algoritma yang sensitif terhadap skala data, seperti regresi logistik atau metode berbasis gradient descent (misalnya, XGBoost). Fitur dengan skala yang berbeda dapat menyebabkan model memberi bobot yang tidak proporsional pada fitur tertentu, sehingga standarisasi memastikan bahwa semua fitur memiliki skala yang sama.
 
 ## Modeling
 
@@ -270,15 +276,15 @@ Meskipun tidak dilakukan tuning, hasil akurasi menunjukkan bahwa Random Forest m
 
 Pada proyek klasifikasi churn ini, metrik evaluasi yang digunakan adalah akurasi, precision, recall, dan F1 score. Metrik ini dipilih karena penting untuk mengevaluasi performa model klasifikasi dalam konteks churn, di mana keseimbangan antara prediksi positif dan negatif sangat penting.
 
+![Confussion Matrix](https://miro.medium.com/v2/resize:fit:640/format:webp/0*QEC-f69bzuMd3cTD.png)
+
 ### Penjelasan Metrik yang Digunakan
 
 #### Akurasi
 
 **Akurasi**: Akurasi mengukur persentase prediksi yang benar dari keseluruhan prediksi. Formula untuk menghitung akurasi adalah:
 
-\[
-Akurasi = \frac{TP + TN}{TP + TN + FP + FN}
-\]
+![Rumus Akurasi](https://miro.medium.com/v2/resize:fit:828/format:webp/1*XjVhud9BW7vq5J_fUprnLg.png)
 
 Di mana:
 
@@ -287,15 +293,11 @@ Di mana:
 - **FP**: False Positives (Prediksi salah untuk kelas positif)
 - **FN**: False Negatives (Prediksi salah untuk kelas negatif)
 
-Akurasi
-
 #### Precision
 
 **Precision**: Precision mengukur seberapa baik model dalam memprediksi positif yang benar dibandingkan dengan semua prediksi positif. Formula precision adalah:
 
-\[
-Precision = \frac{TP}{TP + FP}
-\]
+![Rumus Precision](https://miro.medium.com/v2/resize:fit:786/format:webp/1*DoGL8YNxBOwkX_gd9P_CEA.png)
 
 Precision tinggi berarti model memberikan prediksi positif yang relevan dengan hasil aktual.
 
@@ -303,9 +305,7 @@ Precision tinggi berarti model memberikan prediksi positif yang relevan dengan h
 
 **Recall**: Recall mengukur kemampuan model untuk menemukan semua contoh positif dari keseluruhan positif yang ada. Formula recall adalah:
 
-\[
-Recall = \frac{TP}{TP + FN}
-\]
+![Rumus Recall](https://miro.medium.com/max/538/1*OV0hfgCStTI8hy6lAY1SdA.jpeg)
 
 Recall penting dalam kasus churn karena kita ingin mengidentifikasi semua pelanggan yang berpotensi churn.
 
@@ -313,9 +313,7 @@ Recall penting dalam kasus churn karena kita ingin mengidentifikasi semua pelang
 
 **F1 Score**: F1 score adalah rata-rata harmonik dari precision dan recall. Metrik ini berguna ketika ada ketidakseimbangan antara kelas dan kita ingin menyeimbangkan precision dan recall. Formula F1 score adalah:
 
-\[
-F1 = 2 \times \frac{Precision \times Recall}{Precision + Recall}
-\]
+![Rumus F1 Score](https://ilmudatapy.com/wp-content/uploads/2021/01/confusion-matrix-5.png)
 
 F1 score membantu kita melihat kinerja model secara menyeluruh, khususnya pada masalah klasifikasi yang memiliki distribusi kelas yang tidak seimbang.
 
