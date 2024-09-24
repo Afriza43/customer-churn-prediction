@@ -126,20 +126,17 @@ Dari grafik di atas, maka dapat disimpulkan sebagai berikut :
 1. Hubungan Fitur Gender dengan Target (Exited)
 
    ![barchart-multi-gender](https://github.com/user-attachments/assets/79a83b66-8f9b-40ca-9e9c-f03185e06510)
-   ![barchart-multi-gender](https://github.com/user-attachments/assets/79a83b66-8f9b-40ca-9e9c-f03185e06510)
 
 Dari grafik, dapat dilihat bahwa banyak pelanggan yang keluar berasal dari negara German dan France
 
 2. Hubungan Fitur Geography dengan Target (Exited)
 
    ![barchart-multi-geo](https://github.com/user-attachments/assets/f7c00256-e524-48f8-8c98-457f4432c450)
-   ![barchart-multi-geo](https://github.com/user-attachments/assets/f7c00256-e524-48f8-8c98-457f4432c450)
 
 Dari semua pelanggan perempuan, 25% perempuan memutuskan untuk meninggalkan bank.Dari semua pelanggan laki - laki, 16% meninggalkan bank
 
 3. Hubungan Fitur Card Type dengan Target (Exited)
 
-   ![barchart-multi-cardtype](https://github.com/user-attachments/assets/1707fe28-aa9e-4937-96ba-eda897f256c7)
    ![barchart-multi-cardtype](https://github.com/user-attachments/assets/1707fe28-aa9e-4937-96ba-eda897f256c7)
 
 Sekitar 20% pelanggan dari tiap kategori kartu memutuskan untuk pergi meninggalkan bank
