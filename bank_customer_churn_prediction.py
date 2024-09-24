@@ -336,7 +336,7 @@ smote = SMOTE(random_state=42)
 
 x_train, y_train = smote.fit_resample(x_train,y_train)
 
-y.hist()
+y_train.hist()
 
 """### Standarisasi
 
