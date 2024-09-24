@@ -55,14 +55,9 @@ warnings.filterwarnings('ignore')
 df = pd.read_csv("customer_churn.csv")
 df.head()
 
-"""### Exploratory Data Analysis
+"""#### Deskripsi Variabel
 
-#### Deskripsi Variabel
-"""
-
-df.columns
-
-"""Dataset terdiri dari 14 kolom atau fitur yang memberikan informasi mengenai pelanggan dan perilaku mereka:
+Dataset terdiri dari 14 kolom atau fitur yang memberikan informasi mengenai pelanggan dan perilaku mereka:
 
 * RowNumber — Urutan baris, tidak berpengaruh pada model.
 * CustomerId — ID pelanggan (acak, tidak relevan untuk model).
@@ -82,7 +77,11 @@ df.columns
 * Satisfaction Score — Skor yang diberikan oleh pelanggan untuk penyelesaian keluhan mereka.
 * Card Type — jenis kartu yang dipegang oleh pelanggan.
 * Point Earned — poin yang diperoleh pelanggan karena menggunakan kartu kredit.
+
+### Exploratory Data Analysis
 """
+
+df.columns
 
 df.info()
 
