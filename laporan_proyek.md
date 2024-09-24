@@ -81,16 +81,19 @@ Terdapat beberapa outlier pada fitur 'Age' dan 'CreditScore'. Akan tetapi, kali 
 **Fitur Kategorikal**
 
 1. Gender
+
    ![Bar Chart Gender](https://github.com/Afriza43/customer-churn-prediction/blob/main/images/barchart-uni-gender.png)
 
 Berdasarkan grafik di atas, customer laki - laki lebih banyak, sekitar 54,6% dari seluruh data, daripada perempuan sebesar 45,4%.
 
 2. Card Type
+
    ![Bar Chart Card Type](https://github.com/Afriza43/customer-churn-prediction/blob/main/images/barchart-uni-cardtype.png)
 
 Terdapat 4 kategori tipe kartu yang dimiliki oleh customer, yaitu Diamond, Gold, Silver, Platinum. Masing - masing kategori tersebut memiliki jumlah yang sama yaitu 25% dari jumlah dataset, sekitar 2500 customer untuk masing - masing kategori
 
 3. Geography
+
    ![Bar Chart Geography](https://github.com/Afriza43/customer-churn-prediction/blob/main/images/barchart-uni-geo.png)
 
 Pada dataset, customer hanya berasal dari 3 negara, diantaranya France, Spain, dan German. Dari grafik di atas, dapat dilihat bahwa Bank tersebut banyak yang berasal dari negara France, sekitar 50% dari sampel. Sedangkan sisanya, yaitu berasal dari Germany dan Spain sebanyak 25% dari data untuk masing - masing negara
@@ -332,7 +335,7 @@ Dari tabel di atas, kita dapat melihat bahwa **Random Forest** adalah model deng
 
 ### Confusion Matrix
 
-Gambar di atas menunjukkan **Confusion Matrix** untuk model RandomForest:
+Berikut adalah nilai confussion matrix nya :
 
 - True Negatives (0,0): 1640
 - False Positives (0,1): 11
