@@ -82,27 +82,27 @@ Terdapat beberapa outlier pada fitur 'Age' dan 'CreditScore'. Akan tetapi, kali 
 
 1. Gender
 
-   ![Bar Chart Gender](https://github.com/Afriza43/customer-churn-prediction/blob/main/images/barchart-uni-gender.png)
+   ![barchart-uni-gender](https://github.com/user-attachments/assets/9ea25ef4-617c-491c-94df-10850f04fdb8)
 
 Berdasarkan grafik di atas, customer laki - laki lebih banyak, sekitar 54,6% dari seluruh data, daripada perempuan sebesar 45,4%.
 
 2. Card Type
 
-   ![Bar Chart Card Type](https://github.com/Afriza43/customer-churn-prediction/blob/main/images/barchart-uni-cardtype.png)
+   ![barchart-uni-cardtype](https://github.com/user-attachments/assets/d8994aad-2755-484a-8e8d-0c06df0f8b79)
 
 Terdapat 4 kategori tipe kartu yang dimiliki oleh customer, yaitu Diamond, Gold, Silver, Platinum. Masing - masing kategori tersebut memiliki jumlah yang sama yaitu 25% dari jumlah dataset, sekitar 2500 customer untuk masing - masing kategori
 
 3. Geography
 
-   ![Bar Chart Geography](https://github.com/Afriza43/customer-churn-prediction/blob/main/images/barchart-uni-geo.png)
+   ![barchart-uni-geo](https://github.com/user-attachments/assets/d90bfab0-3327-4d4e-9dda-473564d0aea6)
 
 Pada dataset, customer hanya berasal dari 3 negara, diantaranya France, Spain, dan German. Dari grafik di atas, dapat dilihat bahwa Bank tersebut banyak yang berasal dari negara France, sekitar 50% dari sampel. Sedangkan sisanya, yaitu berasal dari Germany dan Spain sebanyak 25% dari data untuk masing - masing negara
 
 **Fitur Numerik**
 
-Hubungan Antar Fitur Numerik
+4. Hubungan Antar Fitur Numerik
 
-![Histogram](https://github.com/Afriza43/customer-churn-prediction/blob/main/images/histogram_fitur_numerik.png)
+![histogram_fitur_numerik](https://github.com/user-attachments/assets/c5613cfd-4304-4de8-ae4f-6d1e90ef95ea)
 
 Dari grafik di atas, maka dapat disimpulkan sebagai berikut :
 
@@ -113,32 +113,39 @@ Dari grafik di atas, maka dapat disimpulkan sebagai berikut :
 - Gaji pelanggan pada bank tersebut cukup variatif dari 0 - 200.000
 - 20% pelanggan dari sampel mengeluh dengan bank tersebut.
 
+5. Analisis Target ['Exited']
+
+   ![churn-rate](https://github.com/user-attachments/assets/85b7a275-4d02-43c1-a9af-9b82ff7009ee)
+
+   20% pelanggan dari sampel meninggalkan bank tersebut. Hal ini terhitung cukup besar dan merugikan
+
 #### Multivariate Analysis
 
 **Fitur Kategorikal**
 
 1. Hubungan Fitur Gender dengan Target (Exited)
 
-   ![Bar Chart Gender dengan Target](https://github.com/Afriza43/customer-churn-prediction/blob/main/images/barchart-multi-gender.png)
+   ![barchart-multi-gender](https://github.com/user-attachments/assets/79a83b66-8f9b-40ca-9e9c-f03185e06510)
 
 Dari grafik, dapat dilihat bahwa banyak pelanggan yang keluar berasal dari negara German dan France
 
 2. Hubungan Fitur Geography dengan Target (Exited)
 
-   ![Bar Chart Geography dengan Target](https://github.com/Afriza43/customer-churn-prediction/blob/main/images/barchart-multi-geo.png)
+   ![barchart-multi-geo](https://github.com/user-attachments/assets/f7c00256-e524-48f8-8c98-457f4432c450)
 
 Dari semua pelanggan perempuan, 25% perempuan memutuskan untuk meninggalkan bank.Dari semua pelanggan laki - laki, 16% meninggalkan bank
 
 3. Hubungan Fitur Card Type dengan Target (Exited)
 
-   ![Bar Chart Card Type dengan Target](https://github.com/Afriza43/customer-churn-prediction/blob/main/images/barchart-multi-cardtype.png)
+   ![barchart-multi-cardtype](https://github.com/user-attachments/assets/1707fe28-aa9e-4937-96ba-eda897f256c7)
 
 Sekitar 20% pelanggan dari tiap kategori kartu memutuskan untuk pergi meninggalkan bank
 
 **Fitur Numerik**
 
 1. Matrik Heatmap
-   ![Heatmap Fitur Numerik](https://github.com/Afriza43/customer-churn-prediction/blob/main/images/corr_matrix.png)
+
+![corr_matrix](https://github.com/user-attachments/assets/96a70660-cf02-4448-81db-f36fe385e3cd)
 
 Jika diperhatikan dengan baik, fitur 'Complain' memiliki skor korelasi dengan target 'Exited' sebesar 1. Artinya, hampir setiap pelanggan yang meninggalkan bank tersebut pasti memiliki keluhan dengan bank tersebut.
 
@@ -149,12 +156,14 @@ Tetapi terdapat fitur 'IsActiveMember' yang berkorelasi negatif dengan fitur 'Ex
 Selain fitur tersebut, semua fitur lainnya memiliki korelasi yang kecil. Sehingga tidak diperlukan untuk melakukan prediksi dan dapat dihapus
 
 2. Hubungan Status Aktif Customer dengan Target (Exited)
-   ![Bar Chart IsActiveMember dengan Target](https://github.com/Afriza43/customer-churn-prediction/blob/main/images/barchart-multi-member_status.png)
+
+![barchart-multi-member_status](https://github.com/user-attachments/assets/0aff5d08-3632-4760-ad47-15f8cb465b94)
 
 Member yang tidak aktif lebih banyak meninggalkan bank daripada yang masih aktif
 
 3. Hubungan Umur dengan Target (Exited)
-   ![Bar Chart Umur dengan Target](https://github.com/Afriza43/customer-churn-prediction/blob/main/images/barchart-multi-age.png)
+
+![barchart-multi-age](https://github.com/user-attachments/assets/d2c23a57-408a-40ae-af90-3097c97e5809)
 
 Pelanggan dalam kelompok usia 50-60 tahun memiliki tingkat churn tertinggi, yaitu 56.21%. Ini berarti lebih dari separuh pelanggan dalam kelompok usia ini memutuskan untuk meninggalkan bank.
 
@@ -167,15 +176,15 @@ Dalam proyek ini, proses data preparation dilakukan dengan beberapa tahapan untu
 
    Alasan: Algoritma machine learning sebagian besar bekerja dengan data numerik, sehingga fitur kategorikal harus diubah agar model dapat memahaminya. One-Hot Encoding digunakan karena teknik ini menciptakan representasi biner yang sesuai untuk variabel kategorikal tanpa menciptakan hubungan ordinal antar nilai.
 
-2. Handling Imbalance Data dengan Teknik Oversampling SMOTE
+2. Splitting Data (80:20)
+   Proses: Langkah selanjutnya adalah membagi dataset menjadi dua bagian: data latih (train) dan data uji (test). Pembagian ini dilakukan dengan rasio 80:20, di mana 80% data digunakan untuk melatih model dan 20% data digunakan untuk menguji kinerja model.
+
+   Alasan: Proses pemisahan data ini penting untuk menguji generalisasi model. Dengan melakukan pelatihan pada 80% data dan pengujian pada 20% sisanya, kita dapat mengevaluasi performa model di data yang belum pernah dilihat sebelumnya, memastikan bahwa model tidak overfitting terhadap data latih.
+
+3. Handling Imbalance Data dengan Teknik Oversampling SMOTE
    Proses: Setelah pengkodean, dataset yang digunakan ternyata tidak seimbang. Terdapat lebih banyak data pelanggan yang tidak churn dibandingkan dengan pelanggan yang churn. Untuk mengatasi masalah ini, teknik SMOTE (Synthetic Minority Over-sampling Technique) diterapkan untuk menyeimbangkan data.
 
    Alasan: Ketidakseimbangan kelas pada data dapat menyebabkan model bias terhadap kelas mayoritas, yang mengurangi kemampuan model dalam memprediksi kelas minoritas dengan akurat. SMOTE meningkatkan jumlah sampel pada kelas minoritas dengan mensintesis data baru, yang membantu model untuk belajar secara lebih adil antara kelas mayoritas dan minoritas.
-
-3. Splitting Data (80:20)
-   Proses: Setelah data seimbang, langkah selanjutnya adalah membagi dataset menjadi dua bagian: data latih (train) dan data uji (test). Pembagian ini dilakukan dengan rasio 80:20, di mana 80% data digunakan untuk melatih model dan 20% data digunakan untuk menguji kinerja model.
-
-   Alasan: Proses pemisahan data ini penting untuk menguji generalisasi model. Dengan melakukan pelatihan pada 80% data dan pengujian pada 20% sisanya, kita dapat mengevaluasi performa model di data yang belum pernah dilihat sebelumnya, memastikan bahwa model tidak overfitting terhadap data latih.
 
 4. Standarisasi
    Proses: Standarisasi diterapkan pada fitur numerik seperti Age dan Balance. Teknik ini mengubah nilai setiap fitur sehingga memiliki rata-rata 0 dan varians 1, menggunakan StandardScaler. Fitur biner seperti IsActiveMember dan Complain tidak memerlukan standarisasi karena fitur ini hanya memiliki dua kategori, yaitu 0 dan 1.
@@ -326,21 +335,21 @@ Berikut adalah hasil evaluasi dari beberapa model yang digunakan (RandomForest, 
 
 | Model             | Akurasi | Precision | Recall | F1 Score |
 | ----------------- | ------- | --------- | ------ | -------- |
-| **RandomForest**  | 0.996   | 0.993     | 0.999  | 0.996    |
-| **Decision Tree** | 0.861   | 0.776     | 0.999  | 0.874    |
-| **XGBoost**       | 0.949   | 0.905     | 0.999  | 0.950    |
-| **CatBoost**      | 0.933   | 0.878     | 0.999  | 0.935    |
+| **RandomForest**  | 0.9885  | 0.947     | 0.997  | 0.971    |
+| **Decision Tree** | 0.9085  | 0.682     | 1.0    | 0.811    |
+| **XGBoost**       | 0.8145  | 0.514     | 1.0    | 0.679    |
+| **CatBoost**      | 0.859   | 0.582     | 1.0    | 0.736    |
 
-Dari tabel di atas, kita dapat melihat bahwa **Random Forest** adalah model dengan performa terbaik, dengan akurasi 99,6% dan F1 score 0,996. Hal ini menunjukkan bahwa model ini sangat akurat dalam memprediksi pelanggan yang berpotensi churn dan mempertahankan keseimbangan antara precision dan recall.
+Dari tabel di atas, kita dapat melihat bahwa **Random Forest** adalah model dengan performa terbaik, dengan akurasi 98,8% dan F1 score 0,971. Hal ini menunjukkan bahwa model ini sangat akurat dalam memprediksi pelanggan yang berpotensi churn dan mempertahankan keseimbangan antara precision dan recall.
 
 ### Confusion Matrix
 
 Berikut adalah nilai confussion matrix nya :
 
-- True Negatives (0,0): 1640
-- False Positives (0,1): 11
+- True Negatives (0,0): 1585
+- False Positives (0,1): 22
 - False Negatives (1,0): 1
-- True Positives (1,1): 1533
+- True Positives (1,1): 392
 
 Dengan sangat sedikit kesalahan prediksi (FP dan FN yang rendah), Confusion Matrix ini menunjukkan bahwa model **RandomForest** mampu mengidentifikasi dengan baik pelanggan yang churn maupun yang tidak churn.
 
