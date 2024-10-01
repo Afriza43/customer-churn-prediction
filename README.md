@@ -1,6 +1,6 @@
 # Prediksi Bank Customer Churn
 
-## Domain Proyek
+## Project Overview
 
 Kehilangan pelanggan merupakan masalah besar bagi industri perbankan. Inovasi teknologi yang berkembang saat ini memungkinkan pelanggan untuk dengan mudah membuka rekening baru atau memindahkan aset mereka ke bank lain tanpa perlu datang secara fisik. Situasi ini menciptakan tantangan besar bagi bank dalam menjaga loyalitas pelanggan. Menurut Damanik et al. (2023), perusahaan perlu memahami dengan baik pelanggan mana yang cenderung berhenti agar dapat menyusun strategi retensi yang tepat sebelum kehilangan pelanggan tersebut. Dalam mempertahankan dan menarik customer baru tidak dapat dilakukan secara acak, ada beberapa faktor yang harus diperhatikan dalam menarik customer secara efektif. Oleh karena itu perlu diketahui faktor penyebab churn dalam upaya peningkatan retensi pelanggan di perusahaan (Husein et al., 2021)
 
